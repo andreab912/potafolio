@@ -146,6 +146,7 @@ var main = (function($) {
 		// Window, body.
 			_.$window = $(window);
 			_.$body = $('body');
+			_.$portfolio = $('#portfolio');
 
 		// Thumbnails.
 			_.$thumbnails = $('#thumbnails');
@@ -159,7 +160,7 @@ var main = (function($) {
 						'<div class="toggle"></div>' +
 					'</div>' +
 				'</div>'
-			).appendTo(_.$body);
+			).appendTo(_.$portfolio);
 
 		// Nav.
 			_.$navNext = _.$viewer.find('.nav-next');
