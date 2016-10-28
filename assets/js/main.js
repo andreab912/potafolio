@@ -168,10 +168,11 @@ var main = (function($) {
 
 		// Main wrapper.
 			_.$main = $('#main');
+			_.$top = $('.top');
 
 		// Toggle.
 			$('<div class="toggle"></div>')
-				.appendTo(_.$main);
+				.appendTo(_.$top);
 
 			_.$toggle = $('.toggle');
 
@@ -380,6 +381,7 @@ var main = (function($) {
 			// Prevent event from bubbling up to "hide event on tap" event.
 				_.$toggle.on('touchend', function(event) {
 					event.stopPropagation();
+
 				});
 
 		// Nav.
